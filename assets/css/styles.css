@@ -208,8 +208,130 @@ img {
 /* Active Link */
 
 /*=============== HOME ===============*/
+.home__container {
+  position: relative;
+  padding-top: 3rem;
+  row-gap: 0;
+}
+
+.home__title {
+  color: var(--white-color);
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-semi-bold);
+  text-align: center;
+}
+
+.home__images {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  justify-self: center;
+}
+
+.home__shape {
+  width: 280px;
+  height: 280px;
+  background-color: var(--first-color);
+  border-radius: 50%;
+  clip-path: inset(50% 0 0 0);
+}
+
+.home__images img {
+  position: absolute;
+}
+
+.home__coffee {
+  width: 160px;
+  top: -3.5rem;
+  rotate: 10deg;
+}
+
+.home__splash {
+  max-width: initial;
+  width: 350px;
+  rotate: 10deg;
+  left: -3rem;
+  bottom: 0.5rem;
+}
+
+.home__bean-1,
+.home__bean-2 {
+  width: 40px;
+}
+
+.home__bean-1 {
+  left: 1.5rem;
+  top: 1.5rem;
+}
+
+.home__bean-2 {
+  right: 3.5rem;
+  bottom: 6.5rem;
+  rotate: -90deg;
+  filter: blur(2px);
+}
+
+.home__ice-1 {
+  width: 50px;
+  left: 1.5rem;
+  bottom: 3rem;
+}
+
+.home__ice-2 {
+  width: 40px;
+  top: 4rem;
+  right: 1.25rem;
+  rotate: 60deg;
+}
+
+.home__leaf {
+  width: 50px;
+  right: 6rem;
+  bottom: -1rem;
+  rotate: -15deg;
+}
+
+.home__sticker {
+  position: absolute;
+  width: 50px;
+  right: 0.5rem;
+  top: 29rem;
+  rotate: 15deg;
+}
+
+.home__data {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.home__description {
+  color: var(--white-color);
+  margin-bottom: 1.5rem;
+}
 
 /*=============== BUTTON ===============*/
+.button {
+  display: inline-flex;
+  justify-content: center;
+  background-color: var(--first-color);
+  color: var(--white-color);
+  padding: 1rem 2rem;
+  font-weight: var(--font-semi-bold);
+  transition: background 0.4s, box-shadow 0.4s;
+}
+
+.button:hover {
+  background-color: var(--first-color-alt);
+  box-shadow: 0 8px 24px hsla(166, 85%, 8%, 0.2);
+}
+
+.button-dark {
+  background-color: var(--dark-color);
+}
+
+.button-dark:hover {
+  background-color: var(--dark-color);
+}
 
 /*=============== POPULAR ===============*/
 
