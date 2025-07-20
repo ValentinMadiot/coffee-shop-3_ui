@@ -204,6 +204,9 @@ img {
 }
 
 /* Add Shadow Header */
+.shadow-header {
+  box-shadow: 0 4px 16px hsla(166, 85%, 8%, 0.3);
+}
 
 /* Active Link */
 
@@ -334,8 +337,91 @@ img {
 }
 
 /*=============== POPULAR ===============*/
+.popular {
+  background-color: var(--body-white-color);
+}
+
+.popular .section__title {
+  color: var(--title-color);
+}
+
+.popular__swiper {
+  padding-top: 1.5rem;
+}
+
+.popular__card {
+  width: 270px;
+  display: grid;
+  row-gap: 1.5rem;
+}
+
+.popular__images {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  justify-self: center;
+}
+
+.popular__shape {
+  width: 195px;
+  height: 195px;
+  background-color: var(--first-color);
+  border-radius: 50%;
+  clip-path: inset(50% 0 0 0);
+}
+
+.popular__images img {
+  position: absolute;
+}
+
+.popular__coffee {
+  width: 130px;
+  top: -1.5rem;
+}
+
+.popular__bean-1 {
+  width: 30px;
+  top: 3rem;
+  left: 0.5rem;
+  transition: transform 0.5s 0.1s;
+}
+
+.popular__bean-2 {
+  width: 20px;
+  right: 2rem;
+  bottom: 2rem;
+  rotate: 75deg;
+  filter: blur(1px);
+  transition: transform 0.5s 0.1s;
+}
+
+.popular__data {
+  text-align: center;
+}
+
+.popular__name {
+  font-size: var(--h1-font-size);
+  columns: var(--title-color);
+  margin-bottom: 0.5rem;
+}
+
+.popular__description {
+  margin-bottom: 1.5rem;
+}
+
+.popular__card:hover .popular__bean-1 {
+  transform: translate(-0.5rem, -0.25rem);
+}
+
+.popular__card:hover .popular__bean-2 {
+  transform: translate(0.5rem, -0.25rem);
+}
 
 /* Swiper Class */
+.swiper {
+  overflow: visible;
+  margin-inline: initial;
+}
 
 /*=============== ABOUT ===============*/
 
